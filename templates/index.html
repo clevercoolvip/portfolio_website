@@ -24,6 +24,9 @@
                         <a href="#idfeedbacks" class="text-gray-900 dark:text-white hover:underline">Feedbacks</a>
                     </li>
                     <li>
+                      <a href="#projectID" class="text-gray-900 dark:text-white hover:underline">Projects</a>
+                  </li>
+                    <li>
                         <a href="#idcontact" class="text-gray-900 dark:text-white hover:underline">Contact</a>
                     </li>
                 </ul>
@@ -70,6 +73,8 @@
             </div>
           </div>
         </div>
+
+
         <section class="bg-gray-50 pt-20 pb-28 px-8" id="idservices">
           <div class="max-w-6xl mx-auto">
             <div class="text-center">
@@ -183,6 +188,222 @@
                     <a href="/static/resume.pdf" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-white focus:outline-none bg-blue-700 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" download>Download Resume</a> 
                 </div>
           </section>
+
+
+          <!-- ====== Portfolio Section Start -->
+<section
+x-data="
+{
+showCards: 'all',
+activeClasses: 'bg-primary text-white',
+inactiveClasses: 'text-body-color dark:text-dark-6 hover:bg-primary hover:text-white',
+}
+"
+class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark"
+>
+<div class="container mx-auto">
+   <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+         <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+            <span class="text-primary mb-2 block text-lg font-semibold">
+            Portfolio
+            </span>
+            <h2
+               class="text-dark mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]"
+               >
+               My Recent Projects
+            </h2>
+            <p class="text-body-color text-base dark:text-dark-6">
+              Projects are baased on Data Analysis, AI & ML and etc. The project is prepared by real world data.
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="-mx-4 flex flex-wrap" id="projectID">
+      <div
+         :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
+         class="w-full px-4 md:w-1/2 xl:w-1/3"
+         >
+         <div class="relative mb-12">
+            <div class="overflow-hidden rounded-[10px]">
+               <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGF0YSUyMEFuYWx5c2lzfGVufDB8fDB8fHww"
+                  alt="portfolio"
+                  class="w-full"
+                  />
+            </div>
+            <div
+               class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark"
+               >
+               <span class="text-primary mb-2 block text-sm font-medium">
+               Data Analysis
+               </span>
+               <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
+                  Automatic Data Analysis
+               </h3>
+               <a
+                  href="https://github.com/clevercoolvip/hackcbs6.0.git"
+                  class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
+                  >
+               View Details
+               </a>
+            </div>
+         </div>
+      </div>
+      <div
+         :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
+         class="w-full px-4 md:w-1/2 xl:w-1/3"
+         >
+         <div class="relative mb-12">
+            <div class="overflow-hidden rounded-[10px]">
+               <img
+                  src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1haWx8ZW58MHx8MHx8fDA%3D"
+                  alt="portfolio"
+                  class="w-full"
+                  />
+            </div>
+            <div
+               class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark"
+               >
+               <span class="text-primary mb-2 block text-sm font-medium">
+               Web Scraper
+               </span>
+               <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
+                  Research paper Emailer
+               </h3>
+               <a
+                  href="https://github.com/clevercoolvip/paper_emailer.git"
+                  class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
+                  >
+               View Details
+               </a>
+            </div>
+         </div>
+      </div>
+      <div
+         :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' "
+         class="w-full px-4 md:w-1/2 xl:w-1/3"
+         >
+         <div class="relative mb-12">
+            <div class="overflow-hidden rounded-[10px]">
+               <img
+                  src="/static/garud.png"
+                  alt="portfolio"
+                  class="w-full"
+                  />
+            </div>
+            <div
+               class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark"
+               >
+               <span class="text-primary mb-2 block text-sm font-medium">
+               AIML
+               </span>
+               <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
+                  Punishment(Garud Purana)
+               </h3>
+               <a
+                  href="https://github.com/clevercoolvip/garud_puran"
+                  class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
+                  >
+               View Details
+               </a>
+            </div>
+         </div>
+      </div>
+      <div
+         :class="showCards == 'all' || showCards == 'design' ? 'block' : 'hidden' "
+         class="w-full px-4 md:w-1/2 xl:w-1/3"
+         >
+         <div class="relative mb-12">
+            <div class="overflow-hidden rounded-[10px]">
+               <img
+                  src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNwb3J0cyUyMGFjYWRlbXl8ZW58MHx8MHx8fDA%3D"
+                  alt="portfolio"
+                  class="w-full"
+                  />
+            </div>
+            <div
+               class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark"
+               >
+               <span class="text-primary mb-2 block text-sm font-medium">
+               Web Development
+               </span>
+               <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
+                TOPSHOT Sports Academy
+               </h3>
+               <a
+                  href="https://github.com/clevercoolvip/topshot"
+                  class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
+                  >
+               View Details
+               </a>
+            </div>
+         </div>
+      </div>
+      <div
+         :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
+         class="w-full px-4 md:w-1/2 xl:w-1/3"
+         >
+         <div class="relative mb-12">
+            <div class="overflow-hidden rounded-[10px]">
+               <img
+                  src="https://images.unsplash.com/photo-1673255745677-e36f618550d1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFpfGVufDB8fDB8fHww"
+                  alt="portfolio"
+                  class="w-full"
+                  />
+            </div>
+            <div
+               class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark"
+               >
+               <span class="text-primary mb-2 block text-sm font-medium">
+               Generative Adversarial Network
+               </span>
+               <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
+                  Text-to-Image Generator
+               </h3>
+               <a
+                  href="https://github.com/clevercoolvip/text-2img"
+                  class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
+                  >
+               View Details
+               </a>
+            </div>
+         </div>
+      </div>
+      <div
+         :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
+         class="w-full px-4 md:w-1/2 xl:w-1/3"
+         >
+         <div class="relative mb-12">
+            <div class="overflow-hidden rounded-[10px]">
+               <img
+                  src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGF0YXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="portfolio"
+                  class="w-full"
+                  />
+            </div>
+            <div
+               class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark"
+               >
+               <span class="text-primary mb-2 block text-sm font-medium">
+               Data Analysis
+               </span>
+               <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
+                  Automatic Preprocessing of Data
+               </h3>
+               <a
+                  href="https://github.com/clevercoolvip/sih_public/tree/main/sih"
+                  class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white"
+                  >
+               View Details
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</section>
+<!-- ====== Portfolio Section End -->
 
 
         <section class="pt-20 pb-36 px-8 bg-gray-50" id="idcontact">
